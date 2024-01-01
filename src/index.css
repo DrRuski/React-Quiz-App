@@ -99,6 +99,7 @@ h4 {
   display: grid;
   justify-content: space-between;
   gap: 1.2rem;
+  width: 100%;
   grid-template-columns: auto auto;
   font-size: 1.8rem;
   color: var(--color-medium);
@@ -146,7 +147,7 @@ progress {
 }
 
 .btn-ui {
-  float: right;
+  align-self: flex-end;
 }
 
 .options {
@@ -186,6 +187,7 @@ progress {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
+  width: 100%;
 }
 
 .result span {
@@ -229,6 +231,12 @@ progress {
   background-size: calc(100% / 3) 12px;
   background-repeat: no-repeat;
   animation: loader 1s infinite linear;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 @keyframes loader {
